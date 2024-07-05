@@ -1,10 +1,21 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Button } from "antd";
+import { useRouter } from "next/navigation";
+import { getMenuList } from "@/utils/api/apiUtils";
+import { useEffect } from "react";
 
 export default function Home() {
+  const router = useRouter();
+  useEffect(() => {
+    getMenuList().then((res) => console.log("menu: ", res.data));
+  }, []);
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <Button onClick={() => router.push("/library")}>library</Button>
+        <Button onClick={() => router.push("/template")}>template</Button>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
