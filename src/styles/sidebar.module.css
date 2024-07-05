@@ -1,0 +1,76 @@
+/* .sidebarContainer {
+  border-right: 1px solid rgba(234, 234, 234, 1);
+} */
+
+.listButton {
+  text-align: right;
+  margin: 0px 10px 0px 10px;
+  padding-top: 12px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageContainer {
+  display: flex;
+  flex: 1;
+  overflow: auto;
+}
+
+.leftPane {
+  flex: 0.13;
+  /* 1.2 화면에 대한 스타일 추가 */
+  transition: all 0.3s ease-in; /* 0.5초 동안 ease 함수로 전환 */
+}
+
+.rightPane {
+  flex: 4.87;
+  /* 3.8 화면에 대한 스타일 추가 */
+  transition: all 0.3s ease-in; /* 0.5초 동안 ease 함수로 전환 */
+}
+
+.pageContainerExpanded {
+  display: flex;
+  flex: 1;
+  overflow: auto;
+  .leftPane {
+    flex: 0.75; /* 1.2 화면이 줄어들 때의 flex 값 */
+    transition: all 0.3s ease-in; /* 0.5초 동안 ease 함수로 전환 */
+  }
+
+  .rightPane {
+    flex: 3.8; /* 3.8 화면이 커질 때의 flex 값 */
+    transition: all 0.3s ease-in; /* 0.5초 동안 ease 함수로 전환 */
+  }
+}
+
+.logoText {
+  color: var(--hblue-50, #0249ac);
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 190px;
+  white-space: nowrap;
+}
+
+.mainMenuText {
+  font-family: Pretendard;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.subMenuText {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.childrenContainer {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+}
