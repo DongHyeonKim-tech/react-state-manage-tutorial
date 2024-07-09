@@ -120,7 +120,7 @@ export interface PrtcQuestionElement {
   comment?: string;
 }
 
-interface QuestionTableColumnType {
+export interface QuestionTableColumnType {
   category_id: string;
   category_nm: string;
   choices?: any;
