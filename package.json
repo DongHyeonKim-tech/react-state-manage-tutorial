@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "set PORT=3005 && next build",
+    "start": "set PORT=3005 && next start",
     "lint": "next lint"
   },
   "dependencies": {
