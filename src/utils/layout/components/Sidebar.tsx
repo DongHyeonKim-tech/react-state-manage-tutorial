@@ -5,7 +5,7 @@ import { Box, IconButton } from "@mui/material";
 import { RightOutlined, LeftOutlined } from "@ant-design/icons";
 import { Menu } from "antd";
 import { useRecoilState } from "recoil";
-import { menuState } from "@/recoilState";
+import { menuState } from "@/utils/recoil/recoilState";
 import { useRouter } from "next/navigation";
 
 import { getMenuList } from "@/utils/api/apiUtils";

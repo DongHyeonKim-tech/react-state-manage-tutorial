@@ -1,7 +1,7 @@
 import { Stack } from "@mui/material";
 import styles from "@/styles/top-navbar.module.css";
 import { useRecoilState } from "recoil";
-import { menuState } from "@/recoilState";
+import { menuState } from "@/utils/recoil/recoilState";
 
 export const TopNav = () => {
   const [menu, setMenu] = useRecoilState(menuState);

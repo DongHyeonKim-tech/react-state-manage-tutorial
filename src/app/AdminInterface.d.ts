@@ -148,3 +148,31 @@ export interface QuestionTableColumnType {
   video_link?: string;
   working_view?: string;
 }
+
+export interface CategoryDataType {
+  key: number;
+  category: number | null;
+  all?: number;
+  bim?: number;
+  name: string;
+}
+
+export interface CountStoreType {
+  count: number;
+  increment: () => void;
+  decrement: () => void;
+}
+
+export interface CategoryStateType {
+  data: Array;
+  removeData: (key) => void;
+  insertData: (data) => void;
+  updateData: (data) => void;
+}
+
+export interface MenuStateType {
+  data: any;
+  isLoading: boolean;
+  error: any;
+  fetchData: () => void;
+}
